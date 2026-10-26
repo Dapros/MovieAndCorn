@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movie And Corn
 
-## Getting Started
+Web para mantener a las personas informadas sobre las películas nuevas que se estrenan, con datos de la API de [TMDB](https://www.themoviedb.org).
 
-First, run the development server:
+## Funciones
+- Catálogo ordenado por populares, mejor valoradas, recientes o más taquilleras
+- Filtro por género y búsqueda por título
+- Ficha de cada película con sinopsis, tráiler, reparto y datos de producción
+
+## Tecnologías
+Next.js 16, React 19, TypeScript y Tailwind CSS v4.
+
+## Puesta en marcha
+1. Consigue el **API Read Access Token** en [TMDB → Ajustes → API](https://www.themoviedb.org/settings/api).
+2. Copia `.env.example` a `.env.local` y pega el token en `TMDB_TOKEN`.
+3. Instala y arranca:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
+| Comando | Descripción |
+|---|---|
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Build de producción |
+| `npm run lint` | Linter |
+| `npm test` | Pruebas |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Este producto usa la API de TMDB, pero TMDB no lo avala ni lo certifica.
